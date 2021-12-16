@@ -1,0 +1,138 @@
+/* SCREEN STYLE SHEET*/
+/**************************************************************************************
+date:   	6/16/10
+author:    	Laura Yeffeth
+email:     	laura@clampdesign.com
+website:   	
+
+/* =COLOR SCHEME **********************************************************************
+
+#333333		WHITE 		Background/Header and Footer text
+#333333		GRAY		Main Text
+#000		BLACK		Links
+#000		BLACK 		Link Underlines
+
+/***** =GENERAL ********************************************************************/
+body {  
+text-align: center; /* Centers the container in IE 5* browsers*/
+z-index: 1; /* image replacement */
+}
+
+/* =image replacement
+
+Neal Image Replacement (NIR) by Neal Venditto:  http://neal.venditto.org/
+Text replaces images when style sheets are disabled or images turned off.
+
+In your html, add class "replace" to any text element you want to replace with an image.
+Then surround the text with <span> tags. 
+
+Add z-index: 1 to the body element and z-index: 0 to any element with a background-color that has images in them that need to be replaced with text.
+*/
+.replace span {
+position:relative;
+z-index:-1;
+}
+.replace a {
+display:block;
+width:100%;
+height:100%;
+text-decoration:none;
+border-bottom:none;
+}
+
+/***** =LINKS *************************************************************************/
+
+a:link, a:visited {text-decoration:none; border-bottom:1px solid #333; color:#333;}
+a:hover, a:active {text-decoration:none; border-bottom:none; color:#333;}
+
+#header #logo a:link, #header #logo a:visited,#header #logo a:hover, #header #logo a:active {
+border-bottom: none;
+}
+#navigation a:link, #navigation a:visited {border-bottom: none;}
+#navigation a:hover, #navigation a:active, #contact #navigation .contact a, #buy #navigation .buy a, #home #navigation .home a, #soaps #navigation .soaps a
+{border-bottom: 2px solid #333;}
+
+/***** =TYPOGRAPHY ********************************************************************/
+
+body {
+font: 62.5%/1.4 Arial, Verdana, sans-serif; /*Make 1em = 10pt for easy calculations*/
+}
+#container {
+text-align:left;
+color:#444;
+}
+h1,h2,h3,h4,h5 {
+text-transform: uppercase;
+margin:0 0 .5em 0;
+}
+h1 {font-size: 2.2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.8em;}
+h4 {font-size: 1.6em;}
+h5 {font-size: 1.4em;}
+
+#content p {
+margin-bottom:1em;
+font-size: 1.4em;
+line-height:1.625; 
+}
+#info p {
+line-height:1.4; 
+margin-bottom: 40px;
+}
+#bio p {
+line-height:1.8; 
+}
+
+/***** =LAYOUT ************************************************************************/
+
+#container {
+width:850px;
+position:relative;
+margin: 0 auto; 
+}
+#header {
+position:relative;
+height:60px;
+width: 850px;
+margin:0 auto;
+padding:30px 0 20px 0;
+background:#fff;
+text-transform:uppercase;
+}
+#content {
+position:relative;
+clear:both;
+width:850px;
+margin:0 auto;
+background:#fff;
+overflow:auto;
+} 
+#image {
+margin:0;
+width:400px;
+min-height:400px;
+overflow:hidden;
+float:left;
+}
+#bio, #info {
+width:380px;
+float:right;
+text-align: justify;
+}
+#info {
+text-align: left;
+line-height: 1.2;
+}
+/***** =HEADER ************************************************************************/
+#header #logo {
+float:left;
+}
+#header ul {
+float:right;
+}
+#header ul li {
+font-weight: bold;
+float:left;
+padding:0 10px;
+}

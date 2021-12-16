@@ -1,0 +1,30 @@
+
+#content #mainContent {
+width:800px;
+margin:0 80px;
+}
+.work {
+position:relative;
+width:600px;
+padding:0 125px;
+}
+.pics {
+width:600px;
+height:409px;
+overflow: hidden
+}
+.work .prev, .work .next {
+position:absolute;
+display:block;
+top:186px;
+font-size:3em;
+border-bottom:none;
+}
+#content .work a:link, 
+#content .work a:visited,
+#content .work a:hover, 
+#content .work a:hover
+{ text-decoration: none;border-bottom:none;}
+
+.prev {left:20px;}
+.next {right:20px;}
